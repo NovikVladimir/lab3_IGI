@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row content">
+    <div class="col-md-5">
+        <form method="post" action="patient">
+            <div>
+                <label>Форма для заполнения</label>
+            </div>
+            <div>
+                <label>
+                    ФИО
+                    <input type="text" name="name" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Пол
+                    <select id="Select1" name="sex">
+                        <option>мужской</option>
+                        <option>женский</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Телефон
+                    <input type="text" name="phone" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Болезнь
+                    <input type="text" name="disease" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Дата поступления
+                    <input type="date" name="date" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="submit" value="Отправить" />
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-5">
+        Пациенты
+        <table class="views">
+            <tr>
+                <td>ФИО</td>
+                <td>Пол</td>
+                <td>Телефон</td>
+                <td>Болезнь</td>
+                <td>Дата поступления</td>
+            </tr>
+            <tr>
+                <td>ФИО</td>
+                <td>Пол</td>
+                <td>Телефон</td>
+                <td>Болезнь</td>
+                <td>Дата поступления</td>
+            </tr>
+            <tr>
+                <td>ФИО</td>
+                <td>Пол</td>
+                <td>Телефон</td>
+                <td>Болезнь</td>
+                <td>Дата поступления</td>
+            </tr>
+            <tr>
+                <td>ФИО</td>
+                <td>Пол</td>
+                <td>Телефон</td>
+                <td>Болезнь</td>
+                <td>Дата поступления</td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+<div class="row">
+    <div class="col-md-5">
+        <form method="post" action="disease">
+            <div>
+                <label>Форма для заполнения</label>
+            </div>
+            <div>
+                <label>
+                    Название болезни
+                    <input type="text" name="name" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Симптомы
+                    <input type="text" name="symptoms" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Последствия
+                    <input type="text" name="effects" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="submit" value="Отправить" />
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-5">
+        Список сотрудников
+        <table class="views">
+            @{
+                for (int i = 0; i < 5; i++)
+                {
+                    <tr>
+                        <td>Название болезни @i</td>
+                        <td>Симптомы @i</td>
+                        <td>Должность @i</td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+</div>

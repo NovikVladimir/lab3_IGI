@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Medicine";
+}
+<div class="row">
+    <div class="col-md-5">
+        <form method="post" action="medicine">
+            <div>
+                <label>Форма для заполнения</label>
+            </div>
+            <div>
+                <label>
+                    Название лекарства
+                    <input type="text" name="name" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Производитель
+                    <input type="text" name="facturer" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Дозировка
+                    <input type="text" name="dosage" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="submit" value="Отправить" />
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-5">
+        Информация о лекарствах
+        <table class="views">
+            @{
+                for (int i = 0; i < 5; i++)
+                {
+            <tr>
+                <td>Название @i</td>
+                <td>Проивзодитель @i</td>
+                <td>Дозировка @i</td>
+            </tr>
+                }
+            }
+        </table>
+    </div>
+</div>
